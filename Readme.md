@@ -1,5 +1,8 @@
 # sn3218  [![crates.io](https://meritbadge.herokuapp.com/sn3218)](https://crates.io/crates/sn3218) [![docs.rs](https://docs.rs/sn3218/badge.svg)](https://docs.rs/sn3218/) [![Build Status](https://travis-ci.org/zenria/sn3218.svg?branch=master)](https://travis-ci.org/zenria/sn3218)
 
+_Controls SN3218 6-channel LED driver in Rust_
+
+This LED driver is used in the Pimoroni GFX HAT.
 
 ## License
 
