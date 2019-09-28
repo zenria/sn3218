@@ -1,4 +1,4 @@
-//! SN3218 6 channel LED driver for use with [`embedded-hal`]
+//! SN3218 [`embedded-hal`] driver for 6 channel LED driver SN3218
 //!
 //! This LED driver is used on the Raspberry GFX HAT by Pimoroni.
 //!
@@ -25,7 +25,6 @@ const BUF_CMD_ENABLE_ENABLE: [u8; 1] = [0x01];
 const BUF_CMD_ENABLE_DISABLE: [u8; 1] = [0x00];
 const BUF_CMD_255: [u8; 1] = [0xFF];
 
-///
 impl<T: Write> SN3218<T> {
     pub fn new(i2c: T) -> Self {
         let mut gamma_table: [u8; 256] = [0; 256];
